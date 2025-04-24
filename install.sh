@@ -82,9 +82,9 @@ get_latest_version() {
   echo -e "${BLUE}Fetching the latest version of Covlant AI...${NC}"
 
   if command -v curl &> /dev/null; then
-    LATEST_VERSION="1.2.9"
+    LATEST_VERSION="1.2.10"
   elif command -v wget &> /dev/null; then
-    LATEST_VERSION="1.2.9"
+    LATEST_VERSION="1.2.10"
   else
     echo -e "${RED}Error: Neither curl nor wget found. Please install one of them and try again.${NC}"
     exit 1
@@ -97,7 +97,7 @@ get_latest_version() {
   fi
 
   # Remove the 'v' prefix
-  LATEST_VERSION="1.2.9"
+  LATEST_VERSION="1.2.10"
   echo -e "Latest version: ${GREEN}v$LATEST_VERSION${NC}"
 }
 
