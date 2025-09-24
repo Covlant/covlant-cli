@@ -7,7 +7,7 @@ $BinaryName = "covlant.exe"
 $InstallDir = "$env:LOCALAPPDATA\Covlant\bin"
 $TempDir = [System.IO.Path]::GetTempPath() + [System.IO.Path]::GetRandomFileName()
 $UserAgent = "Covlant-CLI-Installer/1.0"
-$Version = "1.2.15" # This will be replaced by the release script
+$Version = "1.2.16" # This will be replaced by the release script
 
 # Create temporary directory
 New-Item -ItemType Directory -Force -Path $TempDir | Out-Null
